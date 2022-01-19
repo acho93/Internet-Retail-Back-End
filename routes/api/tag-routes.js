@@ -11,13 +11,13 @@ router.get('/', (req, res) => {
       {
         model: Product,
         attributes: ['id', 'product_name', 'price', 'stock', 'category_id']
-      },
-      {
-        model: Product,
-        attributes: ['product_name'],
-        through: ProductTag,
-        as: 'product_tag'
       }
+      // {
+      //   model: Product,
+      //   attributes: ['product_name'],
+      //   through: ProductTag,
+      //   as: 'product_tag'
+      // }
     ]
   })
     .then(dbTagData => res.json(dbTagData))
@@ -38,18 +38,18 @@ router.get('/:id', (req, res) => {
       {
         model: Product,
         attributes: ['id', 'product_name', 'price', 'stock', 'category_id']
-      },
-      {
-        model: Product,
-        attributes: ['product_name'],
-        through: ProductTag,
-        as: 'product_tag'
       }
+      // {
+      //   model: Product,
+      //   attributes: ['product_name'],
+      //   through: ProductTag,
+      //   as: 'product_tag'
+      // }
     ]  
   })
     .then(dbTagData => {
       if (!dbTagData) {
-        res.status(404).json({ message: 'No Tag found with this id' });
+        res.status(404).json({ message: 'No tag found with this id' });
         return;
       }
       res.json(dbTagData);
@@ -81,7 +81,7 @@ router.put('/:id', (req, res) => {
   })
     .then(dbTagData => {
       if (!dbTagData[0]) {
-        res.status(404).json({ message: 'No Tag found with this id' });
+        res.status(404).json({ message: 'No tag found with this id' });
         return;
       }
       res.json(dbTagData);
@@ -101,7 +101,7 @@ router.delete('/:id', (req, res) => {
   })
     .then(dbTagData => {
       if (!dbTagData) {
-        res.status(404).json({ message: 'No Tag found with this id' });
+        res.status(404).json({ message: 'No tag found with this id' });
         return;
       }
       res.json(dbTagData);

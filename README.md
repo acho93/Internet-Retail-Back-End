@@ -11,7 +11,7 @@ an employee database for a business that includes information about the departme
 Here is a video of how it functions: 
 
 ## Installation
-You will need to run 'npm install' to install all dependencies, which include Express, Sequelize, MySQL2, and DotEnv.
+You will need to run 'npm install' to install all dependencies, which include Express, Sequelize, MySQL2, and dotenv.
 
 ## Usage
 
