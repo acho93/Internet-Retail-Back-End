@@ -3,7 +3,7 @@
 ## Description
 For this challenge, I was tasked with creating the back end code for an e-commerce business. Using Sequelize, I created databases for categories, products, tags, and product tags that can be accessed from the command line. 
 
-Here is a video of how it functions: 
+Here is a video of how it functions: https://youtu.be/pWRR0RKBdmE
 
 ## Installation
 You will need to run 'npm install' to install all dependencies, which include Express, Sequelize, MySQL2, and dotenv.
