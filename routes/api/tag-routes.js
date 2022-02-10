@@ -12,12 +12,6 @@ router.get('/', (req, res) => {
         model: Product,
         attributes: ['id', 'product_name', 'price', 'stock', 'category_id']
       }
-      // {
-      //   model: Product,
-      //   attributes: ['product_name'],
-      //   through: ProductTag,
-      //   as: 'product_tag'
-      // }
     ]
   })
     .then(dbTagData => res.json(dbTagData))
@@ -39,12 +33,6 @@ router.get('/:id', (req, res) => {
         model: Product,
         attributes: ['id', 'product_name', 'price', 'stock', 'category_id']
       }
-      // {
-      //   model: Product,
-      //   attributes: ['product_name'],
-      //   through: ProductTag,
-      //   as: 'product_tag'
-      // }
     ]  
   })
     .then(dbTagData => {
@@ -63,7 +51,7 @@ router.get('/:id', (req, res) => {
 router.post('/', (req, res) => {
   // create a new tag
   Tag.create({
-    Tag_name: req.body.Tag_name,
+    tag_name: req.body.tag_name,
   })
     .then(dbTagData => res.json(dbTagData))
     .catch(err => {

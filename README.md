@@ -1,12 +1,7 @@
 # Internet-Retail-Back-End
 
 ## Description
-WRITE THIS PART!!!!!
-
-For this challenge, I was tasked with creating the back end code for a 
-
-
-an employee database for a business that includes information about the departments, roles, and employees. Using MySQL, I created a database with different tables for "department", "role", and "employee" that can be accessed from the command line. Through Inquirer, the user is prompted through questions that allow the user to view, add, and update the database.
+For this challenge, I was tasked with creating the back end code for an e-commerce business. Using Sequelize, I created databases for categories, products, tags, and product tags that can be accessed from the command line. 
 
 Here is a video of how it functions: 
 
@@ -14,10 +9,7 @@ Here is a video of how it functions:
 You will need to run 'npm install' to install all dependencies, which include Express, Sequelize, MySQL2, and dotenv.
 
 ## Usage
-
-WRITE THIS PART!!!!!
-
-When you run "node server.js", the application uses Inquirer to prompt the user to answer questions that allow for viewing, adding, and updating of the database from the command line.
+To initialize the database, you must first start Sequelize by entering the password. When you run "npm start", the application will start and allow the user to view and update the database from the command line. 
 
 ## Contribution
 Ashley Cho
